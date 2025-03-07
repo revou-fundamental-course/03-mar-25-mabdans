@@ -1,1 +1,57 @@
-/* File CSS */
+/* File css */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/logo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
+.banner-img {
+    border: 1px solid;
+    height: 500px;
+}
+
+.profile-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.portofolio-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+.message-content {
+    border: 1px solid;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
