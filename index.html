@@ -17,15 +17,21 @@
         <!-- Logo Website -->
         <div class="main-logo"></div>
 
+        <!-- Hamburger Menu Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Navigation -->
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#profile">Profile</a>
-            <a href="#portofolio">Portfolio</a>
-            <a href="#message">Message</a>
+        <nav id="main-nav" class="nav-closed">
+            <a href="#home">HOME</a>
+            <a href="#profile">PROFILE</a>
+            <a href="#portfolio">PORTOFOLIO</a>
+            <a href="#message">MESSAGE</a>
         </nav>
     </header>
-
     <hr />
 
     <!-- Main Content -->
@@ -33,12 +39,30 @@
         <!-- Home Content -->
         <section id="home">
             <header>
-                <h1>Hi User, Welcome to Sira Works. Portofolio</h1>
-                <p>Here you can see my profile, achievement, and message me</p>
+                <h1>Hi <span id="name"></span> ! Welcome to</h1>
+
+                <!-- Running Image -->
+                <div class="marquee-container">
+                    <div class="marquee-wrapper">
+                        <img src="assets/running-image.png" class="marquee-img" alt="Running image">
+                        <img src="assets/running-image.png" class="marquee-img" alt="Running image">
+                        <img src="assets/running-image.png" class="marquee-img" alt="Running image">
+                    </div>
+                </div>
+                
+                <p>Step into the world of modding and experience the beauty of custom map design for <span class="bold-text">GTA 5 FiveM.</span></p>
+                <p>Specializing in <span class="bold-text">YMAP</span>, <span class="bold-text">MLO</span>, and <span class="bold-text">Custom Props</span>, each project is crafted for immersive gameplay, stunning aesthetics, and smooth performance. Compatible with both server-side and client-side use for maximum flexibility.</p>
+                <p>To see more work or discuss a project, reach out via message.</p>
             </header>
 
-            <!-- Banner Carousel -->
-            <div class="banner-img"></div>
+            <!-- Banner Autoslide -->
+            <div class="banner-container">
+                <div class="banner-img banner-1"></div>
+                <div class="banner-img banner-2"></div>
+                <div class="banner-img banner-3"></div>
+                <div class="banner-img banner-4"></div>
+            </div>
+            
         </section>
 
         <hr />
@@ -46,44 +70,256 @@
         <!-- Main Profile Content -->
         <section id="profile">
             <header>
-                <h1>Profile</h1>
+                <h1>The Architect of Your FiveM Experience</h1>
             </header>
 
             <!-- Profile Content -->
             <div class="profile-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                <div class="profile-grid">
+                    <!-- Profile Image -->
+                    <div class="profile-image">
+                        <div class="profile-avatar"></div>
+                        <h2>Muhammad Abdan Syakuuron</h2>
+                        <p class="profile-title">FiveM Map & MLO Designer</p>
+                        <div class="profile-social">
+                            <a href="#" class="social-icon discord"><span class="icon-label">Discord</span></a>
+                            <a href="#" class="social-icon github"><span class="icon-label">GitHub</span></a>
+                            <a href="#" class="social-icon cfx"><span class="icon-label">CFX.re</span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile Info -->
+                    <div class="profile-info">
+                        <div class="profile-section">
+                            <h3>About Me</h3>
+                            <p>Passionate FiveM map designer with over 1 years of experience creating immersive environments for roleplay servers. My focus on detail and optimization ensures every project delivers both stunning visuals and smooth performance.</p>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <h3>Specializations</h3>
+                            <div class="skills-container">
+                                <div class="skill-item">
+                                    <div class="skill-icon ymap"></div>
+                                    <div class="skill-details">
+                                        <h4>YMAP Development</h4>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-icon mlo"></div>
+                                    <div class="skill-details">
+                                        <h4>MLO Creation</h4>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-icon prop"></div>
+                                    <div class="skill-details">
+                                        <h4>Custom Props</h4>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-icon performance"></div>
+                                    <div class="skill-details">
+                                        <h4>Optimization</h4>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" style="width: 88%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section">
+                            <h3>Work Approach</h3>
+                            <ul class="approach-list">
+                                <li><span class="approach-icon design"></span>Initial concept development with client collaboration</li>
+                                <li><span class="approach-icon build"></span>Meticulous building process with regular updates</li>
+                                <li><span class="approach-icon test"></span>Thorough testing for performance and glitches</li>
+                                <li><span class="approach-icon optimize"></span>Optimized final delivery with documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Main Portofolio Content -->
-        <section id="portofolio">
+        <hr />
+
+        <!-- Main Portfolio Content -->
+        <section id="portfolio">
             <header>
-                <h1>Portfolio</h1>
+                <h1>My Creative Works</h1>
             </header>
 
-            <!-- Portofolio Content -->
-            <div class="portofolio-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+            <!-- Portfolio Content -->
+            <div class="portfolio-content">
+                <!-- Portfolio Categories -->
+                <div class="portfolio-category">
+                    <h2>YMAP Projects</h2>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="assets/portfolio/garage-ymap-1.png" alt="Garage Exterior YMAP">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Modified Garage Exterior</h3>
+                                <p>Complete exterior redesign with optimized prop placement and enhanced lighting</p>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="assets/portfolio/house-ymap-1.png" alt="House Exterior YMAP">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Custom House Environment</h3>
+                                <p>Detailed landscaping and exterior design for residential roleplay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-category">
+                    <h2>MLO Designs</h2>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="assets/portfolio/garage-mlo-1.png" alt="Garage Interior MLO">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Garage Interior Redesign</h3>
+                                <p>Fully functional workshop space with custom prop placement and realistic zones</p>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="assets/portfolio/house-mlo-1.png" alt="House Interior MLO">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Custom Gaming Room Home Interior</h3>
+                                <p>Detailed residential MLO with multiple rooms and custom lighting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-category">
+                    <h2>Custom Projects</h2>
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <img src="assets/portfolio/garage-custom-1.png" alt="Custom Garage Project">
+                            </div>
+                            <div class="portfolio-details">
+                                <h3>Custom Built Garage</h3>
+                                <p>100% original garage design built from scratch with optimized performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <hr />
 
         <!-- Main Message Content -->
         <section id="message">
             <header>
-                <h1>Message</h1>
+                <h1 id="message-header-title">Need a Custom Map? Let's Connect!</h1>
             </header>
 
             <!-- Message Us Content -->
             <div class="message-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
+                <div class="message-form-container">
+                    <form id="contact-form">
+                        <h3>Send Your Inquiry</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullname">Name</label>
+                            <input required type="text" id="fullname" name="fullname" placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthdate">Date of Birth</label>
+                            <input required type="date" id="birthdate" name="birthdate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-container">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender" value="Male">
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender" value="Female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messages">Message</label>
+                            <textarea required id="messages" name="messages" rows="4" placeholder="Describe your project requirements..."></textarea>
+                        </div>
+
+                        <!-- Form Submit Button -->
+                        <div class="submit-container">
+                            <button type="button" onclick="validateForm()" class="submit-button">Submit Inquiry</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="message-display">
+                    <div class="current-message">
+                        <h3>Message Preview</h3>
+                        <div class="message-card">
+                            <div class="message-timestamp">
+                                <i class="timestamp-icon"></i>
+                                <span id="sender-timestamp">Not submitted yet</span>
+                            </div>
+                            <div class="message-detail">
+                                <span class="message-label">Name:</span>
+                                <span id="sender-full-name">-</span>
+                            </div>
+                            <div class="message-detail">
+                                <span class="message-label">Birthdate:</span>
+                                <span id="sender-birth-date">-</span>
+                            </div>
+                            <div class="message-detail">
+                                <span class="message-label">Gender:</span>
+                                <span id="sender-gender">-</span>
+                            </div>
+                            <div class="message-content-box">
+                                <span class="message-label">Message:</span>
+                                <p id="sender-messages">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Main Footer -->
     <footer>
-        <p>&copy; 2025 Portfolio Sira Works.</p>
+        <p>&copy; 2025 Portfolio <span class="brand">Sira Works.</span></p>
     </footer>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
